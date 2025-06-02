@@ -1,4 +1,0 @@
-name: template
-version: '1.0-SNAPSHOT'
-main: org.user.main
-api-version: '1.21'
