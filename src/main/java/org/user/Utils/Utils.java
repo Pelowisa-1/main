@@ -59,7 +59,7 @@ public class Utils {
             case WITHER -> reasonDeath = "Wither";
             case THORNS -> reasonDeath = "Espinas";
             case DRAGON_BREATH -> reasonDeath = "Aliento de dragón";
-            case CONTACT -> reasonDeath = "Hizo la de milo el pendejo jaja (Cactus)";
+            case CONTACT -> reasonDeath = "Contacto";
             case CRAMMING -> reasonDeath = "Entity Cramming";
             case HOT_FLOOR -> reasonDeath = "Piso en llamas";
             case DRYOUT -> reasonDeath = "Secado";
@@ -87,7 +87,7 @@ public class Utils {
             }
             case SONIC_BOOM -> {
                 if (e instanceof EntityDamageByEntityEvent) {
-                    reasonDeath = Utils.c(chatColor + "SonicBoom ["
+                    reasonDeath = Utils.c(chatColor + "Sonic Boom ["
                             + ((EntityDamageByEntityEvent) e).getDamager().getName() + chatColor + "]");
                 }
             }
@@ -103,8 +103,8 @@ public class Utils {
                     }
                 }
             }
-            case SUICIDE -> reasonDeath = "Por depresivo de mierda :v";
-            case KILL -> reasonDeath = "Lo Killearon por idiota XD";
+            case SUICIDE -> reasonDeath = "???";
+            case KILL -> reasonDeath = "Comando kill";
             case MELTING -> reasonDeath = "Melting";
 
             default -> reasonDeath = c("&8???");
